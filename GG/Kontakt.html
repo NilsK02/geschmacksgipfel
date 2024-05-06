@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Kontaktformular</title>
+   
+    <style type="text/css">
+       body {margin: 0;}
+        header {width: 100%; height: 100px; display: flex; justify-content: space-between; margin: auto; align-items: center; color: #284239; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); background-color: #22A879;}
+        .navbar {font-size: 24px; margin-right: 25px;}
+        .navbar a {color: #29332F; text-decoration: none; margin-right: 15px;}
+        .navbar a:hover {color: #2CDEA0; font-size: 25px;}
+        h1 {margin-left: 25px;}
+        #logo {text-decoration: none;}
+        #logo:visited {color: #29332F;}
+        h2 {color: #29332F; }
+        .kontaktformular {text-align: center; width: 600px; height: 600px; background-color: lightgrey; margin: auto; display: flex; flex-direction: column; margin-top: 50px; border-radius: 10px;}
+        #kontakt input{height: 22px; width: 400px; margin-bottom: 30px; margin-top: 15px;}
+        #nachricht input{height: 150px; width: 400px; margin-top: 15px;}
+        button {width: 100px; margin: auto; background-color: #22A879; color:white; height: 30px; padding: 2px; border-radius: 16px; text-decoration: none; margin-top: 50px;}
+        
+        
+    </style>
+</head>
+    
+<body>
+   <header>
+    <a id="logo" href="Index.html"><h1>GeschmacksGipfel</h1></a>
+        <div class="navbar">
+        <div>
+            <a href="Rezepte.html" target="_blank">Rezepte</a>
+            <a href="rezeptderwoche.html" target="_blank">Rezept der Woche</a>
+            <a href="Kontakt.html" target="_blank">Kontakt</a>
+        </div>
+    </div>
+    </header>
+    
+    
+    
+    <div class="kontaktformular">
+    <h2>Kontaktformular</h2>
+         <form onsubmit="handleFormSubmit(event)"/>
+    <div id="kontakt"><input type="text" id="nameInput" placeholder="NAME*"></div>
+    <div id="kontakt"><input type="text" id="emailInput" placeholder="EMAIL*"></div>
+    <div id="kontakt"><input type="text" id="handyInput" placeholder="HANDYNUMMER" pattern="[0-9]+" title="Es sind nur Zahlen verwendbar"></div>
+    <div id="nachricht"><input type="text" id="nachrichtInput" placeholder="NACHRICHT*"></div>
+    <button type="submit">Absenden</button>
+    </div>
+    
+   <script>
+        function handleFormSubmit(event) {
+            // Verhindert das Standardverhalten des Formulars (Seitenneuladen)
+            event.preventDefault();
+
+            // Holen der eingegebenen Werte
+            var name = document.getElementById('nameInput').value;
+            var email = document.getElementById('emailInput').value;
+            var handy = document.getElementById('handyInput').value;
+            var nachricht = document.getElementById('nachrichtInput').value;
+
+            // Hier könntest du die eingegebenen Werte überprüfen und dann eine Benachrichtigung anzeigen
+            var nachrichtText = `Vielen Dank für ihre Nachricht, Sie erhalten zeitnah eine Antwort`;
+            alert(nachrichtText);
+            location.reload();
+        }
+    </script>
+    
+    
+</body>
+</html>

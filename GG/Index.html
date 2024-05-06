@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>DAS BESTE ESSEN, FÜR DICH</title>
+   
+    <style type="text/css">
+        body {margin: 0;}
+        header {width: 100%; height: 100px; display: flex; justify-content: space-between; margin: auto; align-items: center; color: #284239; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); background-color: #22A879;}
+        #trenner {height: 60px;}
+        .navbar {font-size: 24px; margin-right: 25px;}
+        .navbar a {color: #29332F; text-decoration: none; margin-right: 15px;}
+        .navbar a:hover {color: #2CDEA0; font-size: 25px;}
+        #Suchfeld {margin: auto;}
+        #Suchfeld input {width: 400px; height: 30px; border-radius:25px; text-align: center; }
+        #Suchfeld input::placeholder {color: #29332F; text-align: center;}
+        h1 {margin-left: 25px;}
+        #RDT {display: flex; justify-content: center; flex-direction: column; text-align: left; width: 600px; margin-right: 150px;}
+        #rdt {border-radius: 25px; height: 270px;}
+        #RDTcontainer {display: flex; justify-content: center; flex-direction: row; margin: auto;}
+        p {font-size: 18px; color: #29332F;}
+        #RDT h2 {text-decoration: none; color: #22A879}
+        .sp {background-color: whitesmoke; height: 400px; text-align: center; box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);}
+        .spfotos {display: flex; justify-content: center; flex-direction: row; margin: auto;}
+        .spfotos img {width: 300px; height: 200px; border-radius: 12px; margin: 40px;}
+        .spfotos p {margin-top: 0;}
+        .sp h2 {padding-top: 30px; margin-bottom: -7px;}
+        #btn_rdt {background-color: #22A879; height: 40px; width: 230px; padding: 2px; border-radius: 12px; text-decoration: none;}
+        #btn_rdt a {text-decoration: none; color: white;}
+        #btn_rdt:hover {background-color: #2CDEA0;}
+        .tdt-container {display: flex; justify-content: center; flex-direction: row; margin: auto; }
+        #tdt-text {width: 400px; margin-left: 50px;}
+        #tdt {display: flex; align-items: center; justify-content: center; margin-bottom: 10px;}
+        #gep img {border-radius: 25px; margin-right: 50px;}
+        #klein {font-size: 17px;}
+        .rechtliches {text-align: center;}
+        #logo {text-decoration: none;}
+        #logo:visited {color: #29332F;}
+        .img-container img {box-shadow: 0 0 2px rgba(0, 0, 0, 3);}
+
+
+        
+    </style>
+</head>
+    
+<body>
+    <header>
+    <a id="logo" href="Index.html"><h1>GeschmacksGipfel</h1></a>
+        <div id="Suchfeld"><input type="text" placeholder="...Suche nach leckeren Rezeptideen!..."></div>
+        <div class="navbar">
+        <div>
+            <a href="Rezepte.html" target="_blank">Rezepte</a>
+            <a href="rezeptderwoche.html" target="_blank">Rezept der Woche</a>
+            <a href="Kontakt.html" target="_blank">Kontakt</a>
+        </div>
+    </div>
+    </header>
+    
+    <div id="trenner"></div>
+    
+<div id="RDTcontainer">
+    <div id="RDT">
+    <h2>Pikante Pfannkuchen mit Schinken und Käse</h2>
+        <p>Ein herzhaftes Genusserlebnis erwartet dich mit diesen pikanten Pfannkuchen, gefüllt mit köstlichem Schinken und geschmolzenem Käse.<br> Diese einfache, aber geschmacksintensive Kreation vereint die Leichtigkeit von Pfannkuchen mit der herzhaften Note von würzigem Schinken und cremigem Käse</p>
+        <button id="btn_rdt"><a href="rezept-des-tages.html" target="_blank">Rezept des Tages ausprobieren!</a></button>
+    </div>
+    <img id="rdt" src="https://img.chefkoch-cdn.de/rezepte/2683021420902347/bilder/1533705/crop-642x428/pikante-pfannkuchen-mit-schinken-und-kaese.jpg"/>
+</div>
+    
+    
+<div id="trenner"></div>
+    
+<div class="sp">
+    <h2>Schon probiert?</h2>
+        <div class="spfotos">
+    <div class="img-container">
+        <img src="https://img.chefkoch-cdn.de/rezepte/1844061298739441/bilder/1204660/crop-642x428/mozzarella-haehnchen-in-basilikum-sahnesauce.jpg"/>
+        <a href="Haehnchen.html" target="_blank"><p>Mozzarella-Hähnchen in Basilikum-Sahnesauce</p></a>
+    </div>
+
+    <div class="img-container">
+        <img src="https://img.chefkoch-cdn.de/rezepte/1566191264076872/bilder/840887/crop-642x428/vanillepudding.jpg"/>
+        <a href="Vanillepudding.html" target="_blank"><p>Hausgemachter Vanillepudding</p></a>
+    </div>
+
+    <div class="img-container">
+        <img src="https://img.chefkoch-cdn.de/rezepte/837601188560864/bilder/971685/crop-642x428/kartoffelgratin.jpg"/>
+        <a href="Kartoffelgratin.html" target="_blank"><p>Würziger Kartoffelgratin</p></a>
+    </div>
+        </div>
+</div>    
+    
+    <div id="tdt"><h2>Der Tipp des Tages:</h2></div>
+<div class="tdt-container">
+    <div id="gep"><img src="https://tse2.mm.bing.net/th?id=OIP.icptaquOk14UJ3RAsBbjXgHaEn&pid=Api"/></div>
+    <div id="tdt-text"><p>Die Verwendung einer Gusseisenpfanne bietet eine Reihe von Vorteilen gegenüber herkömmlichen Pfannenmaterialien wie Aluminium oder Edelstahl. Gusseisenpfannen haben eine robuste Konstruktion und sind bekannt für ihre Langlebigkeit. <br>Hier sind einige der Hauptvorteile einer Gusseisenpfanne:<br>
+        <br><b id="klein">Hervorragende Wärmespeicherung, Langlebigkeit, Geschmacksverbesserung, geringe Chemikalienbelastung, keine PFOA oder PTFE Beschichtung</b></p></div> 
+</div>
+    <div id="trenner"></div>
+        
+    <div class="rechtliches">
+    (c) 2024 - Diese Firma ist imaginär GmbH <br> <a href="impressum.html">Impressum</a>
+    
+    
+    </div>    
+    
+</body>
+</html>
